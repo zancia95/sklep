@@ -1,0 +1,59 @@
+.c-btn {
+  border: none;
+  border-radius: $border-radius;
+  display: inline-block;
+  font-size: $font-size-5;
+  font-weight: 700;
+  line-height: $line-height-sm;
+  padding: 1rem 1.25rem;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    // hover dla wszystkich przyciskow
+    text-decoration: none;
+  }
+
+  &__icon {
+    margin-left: 0.5rem;
+  }
+
+  &--accent {
+    background-color: $accent;
+    color: $white;
+
+    &:hover {
+      background-color: darken($accent, 15%);
+      color: $white;
+    }
+  }
+
+  &--light {
+    background-color: $white;
+    color: $gray-very-dark;
+
+    &:hover {
+      background-color: darken($white, 15%);
+      color: $gray-very-dark;
+    }
+  }
+  &--outline {
+    background-color: transparent; // przezroczyste tlo
+    border: 3px solid $white;
+    color: $white;
+    line-height: 1;
+    font-size: $font-size-3;
+    padding: 0.55rem 1rem;
+
+    &:hover {
+      color: darken($white, 15%);
+      border: 3px solid darken($white, 15%);
+    }
+  }
+
+  &--small {
+    border-radius: 3px;
+    font-size: $font-size-9;
+    padding: 0.55rem 0.75rem;
+  }
+}

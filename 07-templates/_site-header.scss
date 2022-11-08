@@ -1,0 +1,69 @@
+.t-site-header {
+  &__top {
+    background-color: $white;
+    padding-bottom: $grid-base * 2;
+
+    @include large-up {
+      padding-bottom: 0;
+    }
+  }
+
+  &__icons {
+    text-align: center;
+
+    @include large-up {
+      text-align: right;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-left: $grid-base * 1.5;
+    position: relative; // aby moc dodac do ikonek dodatkowe okregi z cyframi
+  }
+
+  &__number {
+    background-color: $accent;
+    border-radius: 50%;
+    bottom: 0;
+    color: $white;
+    font-weight: bold;
+    font-size: 9px;
+    height: 14px;
+    line-height: 14px;
+    position: absolute;
+    right: -7px;
+    text-align: center;
+    width: 14px;
+  }
+
+  &__hero {
+    background: $yellow-gradient;
+    color: $gray-very-dark;
+    padding-bottom: $grid-base * 8;
+    padding-top: $grid-base * 8;
+
+    @include large-up {
+      background: url("../images/header-postac.png") 3% 100% no-repeat,
+        $yellow-gradient; //położenie
+      padding-bottom: $grid-base * 18;
+      padding-top: $grid-base * 20;
+    }
+  }
+
+  &__hero-right {
+    @include large-up {
+      padding-left: $grid-base * 41;
+      padding-right: 0;
+    }
+  }
+
+  &__intro-text {
+    font-size: $font-size-3;
+    text-transform: uppercase;
+  }
+
+  &__cta {
+    margin-top: $grid-base * 5;
+  }
+}

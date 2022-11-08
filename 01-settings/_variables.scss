@@ -1,0 +1,49 @@
+// Kolory
+$white: #ffffff;
+$black: #000000;
+$gray-light: #f2f3f5;
+$gray-dark: #797979;
+$gray-very-dark: #444444;
+$gray-muted: #d1d1d1;
+$blue-dark: #3e5cc5;
+$blue-light: #d3eafa;
+$blue-text: #3b99e1;
+$green: #60dc64;
+$accent: #f1c40f;
+
+$yellow-gradient: linear-gradient(
+  0deg,
+  #ebcb55 0%,
+  #f8db7e 100%
+); // deg- ilosc stopni w jakich przeplywa gradient
+$blue-gradient: blue;
+
+// Tekst
+$font-size-base: 1rem;
+$font-size-1: $font-size-base * 3.75; // ~60px
+$font-size-2: $font-size-base * 2.5; // ~40px
+$font-size-3: $font-size-base * 1.5; // ~24px
+$font-size-4: $font-size-base * 1.125; // ~18px
+$font-size-5: $font-size-base * 1; // ~16px
+$font-size-6: $font-size-base * 0.875; // ~14px
+$font-size-7: $font-size-base * 0.75; // ~12px
+$font-size-8: $font-size-base * 0.625; // ~10px
+$font-size-9: $font-size-base * 0.5625; // ~9px
+
+$line-height-base: 1.5;
+$line-height-sm: 1.2;
+$line-height-lg: 1.8;
+
+$letter-spacing-condensed: -0.1rem; //ściśnione do siebie litery
+
+// Siatka
+
+$grid-base: 10px;
+$gutter: $grid-base * 1.5; // odstęp miedzy kolumnami
+
+// Zaokrąglenia
+$border-radius: $grid-base * 0.5;
+
+// Breakpoint
+$bp-medium: "800px";
+$bp-large: "1200px";

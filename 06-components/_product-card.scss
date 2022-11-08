@@ -1,0 +1,97 @@
+.c-product-card {
+  margin-bottom: $grid-base * 4;
+
+  &__top {
+    background-color: $white;
+    height: $grid-base * 31;
+    margin-bottom: $grid-base * 2;
+    position: relative; // relatywna bo bedziemy pozycjonowac w odpowiedni sposob obrazek, ktory znajduje sie w srodku
+    text-align: center; // wysrodkowanie obrazka
+    width: 100%;
+  }
+
+  &__picture {
+    position: relative;
+    top: 50%; //od gory odleglosc 50%
+    transform: translateY(
+      -50%
+    ); // obrazek wzgledem samego siebie przeniesiony o -50% wzgledem wlasnego srodka, aby byl ustawiony idealnie na srodku
+  }
+
+  &__cart {
+    align-items: center;
+    background-color: $gray-light;
+    bottom: $grid-base * 1.5;
+    justify-content: space-between;
+    display: flex;
+    height: $grid-base * 4;
+    left: 0;
+    margin: 0 auto; // jesli element ma podana szerokosc stosujemy margin 0 auto aby go wysrodkowac
+    position: absolute;
+    right: 0;
+    width: 220px;
+  }
+
+  &__cart-icon {
+    text-align: center;
+    flex: 0 0 20%; // kontener cart ma display flex,jesli do podrzednego elementu dodamy flex element bedzie mial podana szerokosc
+  }
+
+  &__cart-text {
+    border-left: 1px solid $white;
+    border-right: 1px solid $white;
+    color: $gray-dark;
+    flex: 0 0 60%; // icona ma 20%, sa dwie icony wiec 40%, dlatego text 60%, razem 100%
+    font-size: $font-size-7;
+    font-weight: bold;
+    line-height: $grid-base * 4;
+    text-transform: uppercase;
+  }
+
+  &__meta {
+    display: flex;
+    font-size: $font-size-6;
+    justify-content: space-between; //rozlozenie elementow w poziomie z rownymi odstepami
+  }
+
+  &__color {
+    border-radius: 50%; //uzyskanie koła
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+
+    &--one {
+      background-color: #dabdfe;
+    }
+    &--two {
+      background-color: #febdbd;
+    }
+    &--three {
+      background-color: #fecfbd;
+    }
+    &--four {
+      background-color: #bde6fe;
+    }
+    &--five {
+      background-color: #fedabd;
+    }
+    &--six {
+      background-color: #e6bdfe;
+    }
+    &--seven {
+      background-color: #458a5c;
+    }
+    &--eight {
+      background-color: #8a6245;
+    }
+    &--nine {
+      background-color: #3f5587;
+    }
+  }
+
+  &__price {
+    display: block;
+    font-size: $font-size-4;
+    font-weight: bold;
+  }
+}

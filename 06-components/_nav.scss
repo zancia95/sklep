@@ -1,0 +1,30 @@
+.c-nav {
+  margin-bottom: $grid-base * 2;
+
+  @include large-up {
+    margin-bottom: 0;
+  }
+
+  &__item {
+    //element wewnątrz bloku
+    color: $gray-very-dark;
+    display: block;
+    font-size: $font-size-6;
+    font-weight: bold;
+    padding-bottom: $grid-base * 2.5;
+    padding-top: $grid-base * 2.5;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    &:hover {
+      color: $gray-very-dark;
+    }
+
+    @include large-up {
+      display: inline-block;
+      width: auto;
+      margin-right: $grid-base * 4;
+    }
+  }
+}

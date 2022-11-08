@@ -1,0 +1,8 @@
+.c-pagination {
+  // <1 2 .. 15> numery stron pod produktami - paginacja
+  &__item {
+    font-weight: bold;
+    margin-left: $grid-base * 0.5;
+    margin-right: $grid-base * 0.5;
+  }
+}
